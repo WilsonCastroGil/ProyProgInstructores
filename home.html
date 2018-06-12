@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programación Tic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styletic.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">ProgInsTiCtma</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#panelPrograma" data-toggle="tab">Programas</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#panelFicha" id="idFicha">Fichas</a></li>
+                    <li><a href="#" data-toggle="tab">Instructor</a></li>
+                    <li><a href="inisesion.html">Salir</a></li>
+                    <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Instructores <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Nueva</a></li>
+                            <li><a href="#">Listar</a></li>
+                        </ul>
+                    </li> -->                    
+                    <!--<li><a href="#">Page 3</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container-fluid">
+        <div class="tab-content" id="panelPrograma">
+            <h3>Gestión Programas de Formación</h3>
+            <br>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#competencias" data-toggle="tab">Competencias</a></li>
+                <li><a href="#ra" data-toggle="tab">Resultados de Aprendizaje</a></li> 
+                <li><a href="#conocimientos" data-toggle="tab">Conocimientos</a></li>
+                <li><a href="#ce" data-toggle="tab">Criterios de Evaluación</a></li>
+                <li><a href="#ap" data-toggle="tab">Actividades de Proyecto</a></li>
+            </ul>    
+        
+            <div class="tab-pane fade in active" id="competencias">
+                <br>
+                <h4>Agregar Competencia</h4>
+                <br>
+                <form action="" method="post">
+                    <label for="codCompetencia">Código</label>
+                    <input type="text" name="codCompetencia" id="codCompetencia">
+                    <br>
+                    <br>
+                    <label for="denomCompetencia">Denominación</label>
+                    <input type="text" name="denomCompetencia" id="denomCompetencia">
+                    <br>
+                    <br>
+                    <label for="horasCompetencia">Horas</label>
+                    <input type="text" name="horasCompetencia" id="horasCompetencia">
+                    <br>
+                    <br>       
+                    <input type="submit" value="Registrar" >
+                </form>
+            </div>
+            <div class="tab-pane fade" id="ra">
+                <br>
+                <h4>Agregar Resultado de Aprendizaje</h4>
+                <br>
+                <form action="" method="post">
+                    <label for="codCompetencia">Competencia</label>
+                    <input type="text" name="codCompetencia" id="codCompetencia">
+                    <br>
+                    <br>
+                    <label for="codRa">Código</label>
+                    <input type="text" name="codRa" id="codRa">
+                    <br>
+                    <br>
+                    <label for="denomRa">Denominación</label>
+                    <input type="text" name="denomRa" id="denomRa">
+                    <br>
+                    <br>       
+                    <input type="submit" value="Registrar" >
+                </form>
+            </div>
+            <div class="tab-pane fade" id="conocimientos">
+                <br>
+                <h4>Agregar Conocimiento</h4>
+                <br>
+                <form action="" method="post">
+                    <label for="codCompetencia">Competencia</label>
+                    <input type="text" name="codCompetencia" id="codCompetencia">
+                    <br>
+                    <br>
+                    <label for="codRa">Resultado(s)</label>
+                    <input type="text" name="codRa" id="codRa">
+                    <br>
+                    <br>
+                    <label for="tipoConocimiento">Tipo</label>
+                    <input type="text" name="tipoConocimiento" id="tipoConocimiento">
+                    <br>
+                    <br>
+                    <label for="codConocimiento">Código</label>
+                    <input type="text" name="codConocimiento" id="codConocimiento">
+                    <br>
+                    <br>
+                    <label for="desConocimiento">Descripción</label>
+                    <input type="text" name="desConocimiento" id="desConocimiento">
+                    <br>
+                    <br>
+                    <input type="submit" value="Registrar" >
+                </form>
+            </div>
+            <div class="tab-pane fade" id="ce">
+                <br>
+                <h4>Agregar Criterio de Evaluación</h4>
+                <br>
+                <form action="" method="post">
+                    <label for="codCompetencia">Competencia</label>
+                    <input type="text" name="codCompetencia" id="codCompetencia">
+                    <br>
+                    <br>
+                    <label for="codRa">Resultado(s)</label>
+                    <input type="text" name="codRa" id="codRa">
+                    <br>
+                    <br>                    
+                    <label for="codCe">Código</label>
+                    <input type="text" name="codCe" id="codCe">
+                    <br>
+                    <br>
+                    <label for="desCe">Descripción</label>
+                    <input type="text" name="desCe" id="desCe">
+                    <br>
+                    <br>
+                    <input type="submit" value="Registrar" >
+                </form>
+            </div>
+            <div class="tab-pane fade" id="ap">
+                <br>
+                <h4>Agregar Actividad de Proyecto</h4>
+                <br>
+                <form action="" method="post">
+                    <label for="codCompetencia">Competencia(s)</label>
+                    <input type="text" name="codCompetencia" id="codCompetencia">
+                    <br>
+                    <br>
+                    <label for="codRa">Resultado(s)</label>
+                    <input type="text" name="codRa" id="codRa">
+                    <br>
+                    <br>                    
+                    <label for="codConocimiento">Conocimientos</label>
+                    <input type="text" name="codConocimiento" id="codConocimiento">
+                    <br>
+                    <br>
+                    <label for="codCe">Criterio(s)</label>
+                    <input type="text" name="codCe" id="codCe">
+                    <br>
+                    <br>
+                    <label for="codAp">Código</label>
+                    <input type="text" name="codAp" id="codAp">
+                    <br>
+                    <br>
+                    <label for="nomAp">Nombre Actividad</label>
+                    <input type="text" name="nomAp" id="nomAp">
+                    <br>
+                    <br>
+                    <label for="horasAp">Horas</label>
+                    <input type="text" name="horasAp" id="horasAp">
+                    <br>
+                    <br>
+                    <input type="submit" value="Registrar" >
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <!-- modal -->
+        <div class="modal fade" id="panelFicha" role="dialog">
+            <div class="modal-dialog">
+                <!-- contenido -->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding:35px 50px;"> 
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>                              
+                        <h3 class="modal-title"> Gestión Fichas</h3>
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;"></div>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#generalFichas" data-toggle="tab">Generalidades</a></li>
+                            <li><a href="#trimFicha" data-toggle="tab">Trimestre</a></li>
+                            <li><a href="#" data-toggle="tab">Jornada</a></li>
+                        </ul>
+
+                        <div class="tab-pane fade in active" id="generalFichas">
+                            <br>
+                            <h4>Agregar Ficha</h4>
+                            <br>
+                            <form action="" method="post">
+                                <label for="codFicha">Código</label>
+                                <input type="text" name="codFicha" id="codFicha">
+                                <br>
+                                <br>                                
+                                <input type="submit" value="Registrar" >
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="trimFicha">
+                            <br>
+                            <h4>Agregar Trimestre</h4>
+                            <br>
+                            <form action="" method="post">
+                                <label for="numTrimestre">Trimestre</label>
+                                <input type="text" name="numTrimestre" id="numTrimestre">
+                                <br>
+                                <br>
+                                <label for="fchaIni">Fecha Inicio</label>
+                                <input type="text" name="fchaIni" id="fchaIni">
+                                <br>
+                                <br>
+                                <label for="fchaFin">Fecha Final</label>
+                                <input type="text" name="fchaFin" id="fchaFin">
+                                <br>
+                                <br>                              
+                                <input type="submit" value="Registrar" >
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                        <!-- <p>Not a member? <a href="#">Sign Up</a></p>
+                        <p>Forgot <a href="#">Password?</a></p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer font-small blue pt-4 mt-4">
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://sena.edu.co"> www.sena.edu.co</a>
+        </div>
+    </footer>
+    
+    <!-- <script>
+    $(document).ready(function(){
+        $("#idFicha").click(function(){
+            $("#panelFicha").modal();
+        });
+    });
+    </script> -->
+</body>
+</html>
